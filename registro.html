@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" id="style">
+
+    <title>iNeko</title>
+</head>
+
+<header >
+
+    <div class="top d-flex p-2 justify-content-around">
+        <div class="minibox">
+            
+            <a href="https://www.instagram.com"><img src="img/ig.png" alt=""></a>
+        
+            <a href="https://www.facebook.com"> <img src="img/fb.webp" alt=""></a>
+       
+            
+            <a href="https://www.telegram.com"><img src="img/telegram.png" alt=""></a>
+        
+            
+            <a href="https://www.twitter.com"><img src="img/twit.webp" alt=""></a>
+        </div>
+        <a href="index.html"><img src="img/logo.webp" alt="" style="margin-left: -100px;"></a>
+
+        <div class="horita mt-4">
+          <h3 id="hora">a</h3>
+        </div>
+    </div>
+
+    <div class="nav d-flex justify-content-between border-bottom border-warning" >
+
+    
+      <div class="vacio" style="width: 189px;">
+        <a id="toggle-theme"><img class="imgnav" src="img/darkmode.png" style="height: 50px; width: 55px; margin-left: 45px;" alt=""></a>
+      </div>
+    
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-center " style="background-color: transparent !important" >
+        <div class="container-fluid ">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tienda
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="perro.html">Perros</a></li>
+                  <li><a class="dropdown-item" href="gato.html">Gatos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                
+              </li>
+            </ul>
+            <a class="navbar-brand" href="index.html">iNeko</a>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" >
+              
+            
+              
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+        
+      </nav>
+      <div class="carrito" >
+        <a href="carrito.html">
+          <img class="imgnav" src="img/carro.png" style="width: 50px; height: 50px; margin-right: 45px;">
+        </a>
+        <a href="login.html">
+          <img class="imgnav" src="img/login.png" style="width: 45px; height: 45px; margin-right: 45px;">
+        </a>
+      </div>
+</div>
+      
+<div class="d-flex justify-content-between ">
+  <div></div>
+  <h5 class="primero mt-2">¡Aprovecha hasta 35% de descuento con el código P3TL0V3R!</h5>
+  <button id="ocultar" class="btn btn-outline-danger m-1">x</button>
+</div>
+
+
+</header>
+<body>
+
+  <div class="container mt-5">
+    <form action="" class="formLogin p-5" id="formRegistro">
+        <h3 class="mb-3">Registro</h3>
+
+            <div class="col mt-3">
+                <label for="txtNombre">Nombre:</label>
+                <input name="txtNombre" id="txtNombre" type="text" placeholder="Ingrese su nombre" class="form-control">
+            </div>
+
+            <div class="col mt-3">
+              <label for="txtUsuario">Usuario:</label>
+              <input name="txtUsuario" id="txtUsuario" type="text" placeholder="Ingrese su usuario" class="form-control">
+           </div>
+  
+            <div class="col mt-3">
+                <label for="txtCorreo">Correo:</label>
+                <input name="txtCorreo" id="txtCorreo" type="text" placeholder="Ingrese su correo" class="form-control">
+            </div>
+            <div class="col mt-3">
+                <label for="txtCCorreo">Confirme Correo:</label>
+                <input name="txtCCorreo" id="txtCCorreo" type="text" placeholder="Confirme su correo" class="form-control">
+            </div>
+
+            <div class="col mt-3"">
+              <label for="txtContraseña">Contraseña:</label>
+              <input name="txtContraseña" id="txtContraseña" type="password" placeholder="Ingrese su contraseña" class="form-control">
+              </div>
+
+              <div class="col mt-3"">
+                <label for="txtCContraseña">Confirme Contraseña:</label>
+                <input name="txtCContraseña" id="txtCContraseña" type="password" placeholder="Confirme su contraseña" class="form-control">
+                </div>
+                <div class="botonIngreso mt-4 d-flex">
+                <button class="btn btn-outline-dark d-flex">Registrar</button>
+                <a href="login.html" style="color: black">    
+                  <label class="labellogin">Ya tienes cuenta?</label>
+                </a>
+                </div>
+        
+    </form>
+    </div>
+
+    
+      <script src="js/jquery-3.6.4.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+     <script src="js/jquery.validate.min.js"></script>
+     <script src="js/sjsjsj.js"></script>
+</body>
+
+<footer>
+  <div class="containerFoot text-center border-top border-warning">
+      <div class="row pt-3">
+        <div class="col">
+          <h4>Sobre nosotros</h2>
+          <p>Bienvenido a nuestra tienda de mascotas, ¡estamos muy contentos de tenerte aquí!</p>
+          <p>En nuestra tienda, creemos en la responsabilidad social y en el compromiso con la calidad. Nos esforzamos por brindar a nuestros clientes y sus mascotas el mejor servicio posible, a través de una amplia gama de productos y servicios para mascotas de alta calidad.</p>
+        </div>
+        <div class="col">
+          <h4>Contacto</h4>
+
+          <h6>  EMAIL: </h6>
+          <p>  ecommerce@ineko.cl</p> 
+          <h6>MESA CENTRAL:</h6>
+          <p>  Whatsapp </p>
+          <h6> HORARIOS DE ATENCIÓN: </h6>
+          <p>  Lunes a Viernes <br> 08:30 a 17:30</p>
+        </div>
+        <div class="col">
+        <h4>Categorias</h4>
+        <a href="">Juguetes para Perro </a> <br>
+        <a href="">Juguetes para Gato</a><br>
+        <a href="">Accesorios</a><br>
+        <a href="">Comida</a><br>
+        <a href="">Cuidado y Salud</a>
+
+
+        </div>
+        <div class="col">
+        <h4>Info. Adicional.</h4>
+        <a href="">Quienes somos</a> <br>
+        <a href="">ubicación</a> <br>
+        <a href="">Terminos y condiciones</a>
+        </div>
+      </div>
+    </div>
+</footer>
+</html>
